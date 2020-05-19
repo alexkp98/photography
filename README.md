@@ -1,0 +1,2 @@
+# photography
+Simple photography website
