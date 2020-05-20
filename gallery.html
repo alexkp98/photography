@@ -35,7 +35,7 @@
 <body>
     <h1>Simple CSS Image Gallery</h1>
     <button onclick="openForm()">admin login</button>    
-    <button onclick="window.location.reload='/admin.html'">admin login</button>
+    <!-- <button onclick="window.location.reload='/admin.html'">admin login</button> -->
 <button  onclick="window.location.href = 'https://github.com/alexkp98/photography/upload/master/gallery'">upload</button>
 <div class="gallery cf">
   <div>
@@ -60,12 +60,12 @@
     <h1>Login</h1>
 
     <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
+    <input type="text" placeholder="Enter Email" id="user" name="email" required>
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Enter Password" id="pass" name="psw" required>
 
-    <button type="submit" class="btn">Login</button>
+    <button type="submit" class="btn" onclick="log()">Login</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
 </div>
@@ -82,5 +82,20 @@
   function closeForm() {
     document.getElementById("myForm").style.display = "none";
   }
+
+  function log(){
+  var user="admin"
+  var pass="admin"
+  var userentry=document.getElementById("user").value;
+  var passentry=document.getElementById("pass").value;
+  if(user==userentry&&pass==passentry){
+    alert("login sucessfully");
+   "window.location.href = 'https://github.com/alexkp98/photography/upload/master/gallery'"
+  }
+  else
+  {
+    alert("please check your username and password");
+  }
+}
 </script>
 </html>
