@@ -29,6 +29,7 @@ $(document).ready(function () {
   });
 
   function openForm() {
+    alert("open form");
     document.getElementById("myForm").style.display = "block";
   }
   
