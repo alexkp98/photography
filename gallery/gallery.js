@@ -27,12 +27,3 @@ $(document).ready(function () {
       console.log(data);
     });
   });
-
-  function openForm() {
-    alert("open form");
-    document.getElementById("myForm").style.display = "block";
-  }
-  
-  function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-  }
