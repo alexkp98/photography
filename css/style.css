@@ -987,7 +987,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* gallery */
 
 
-/* @import "compass/css3";
+@import "compass/css3";
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
@@ -1021,9 +1021,9 @@ body {
   width: 200px;
   transition: .1s transform;
   transform: translateZ(0); /* hack */
-/* } */
+}
 
-/* .gallery > div:hover {
+.gallery > div:hover {
   z-index: 1;
 }
 
@@ -1046,18 +1046,34 @@ h1 {
   margin: 40px 0;
   font-size: 24px;
   text-align: center;
-}  */
-
-/*Gallery Content*/
-
-.gallery {
-	width: 100%;
-	display: block;
 }
-.gallery .mrgn {
-	margin: 10px 0;
+
+/* video gallery */
+
+body {
+  background-color: #C4ECD1;
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 80px;
 }
-.gallery .mrgn img{
-	width: 100%;
-	height:200px;
+
+.video-container {
+  width: 40%;
+  padding: 10px;
+  background: white;
+  display: inline-block;
+}
+
+.responsive-video {  
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.responsive-video iframe, .responsive-video video {
+  position: absolute;
+  width: 100%;
+  height: 100%;  
 }
