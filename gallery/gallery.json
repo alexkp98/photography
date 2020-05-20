@@ -1,8 +1,8 @@
  [{
     "id" : "1", 
-    "path": "hello1@email.se"
+    "path": "https://raw.githubusercontent.com/alexkp98/photography/master/img/about-img.jpg"
 },
 {
     "id" : "2", 
-    "path": "hello2@email.se"
+    "path": "https://raw.githubusercontent.com/alexkp98/photography/master/img/about-img.jpg"
 }]
