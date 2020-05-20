@@ -1,8 +1,14 @@
-const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://admin:admin@cluster0-ypeuj.mongodb.net/test?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true });
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
-});
+function log(){
+  var user="admin"
+  var pass="admin"
+  var userentry=document.getElementById("user").value;
+  var passentry=document.getElementById("pass").value;
+  if(user==userentry&&pass==passentry){
+    alert("login sucessfully");
+   "window.location.href = 'https://github.com/alexkp98/photography/upload/master/gallery'"
+  }
+  else
+  {
+    alert("please check your username and password");
+  }
+}
