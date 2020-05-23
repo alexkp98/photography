@@ -1,0 +1,14 @@
+{
+    "collection":[
+	{
+		"id": "red",
+		"path": "#f00"
+	},
+	{
+		"id": "green",
+		"path": "#0f0"
+	}
+]
+}
+
+

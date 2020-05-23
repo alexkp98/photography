@@ -1,0 +1,24 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <button onclick="alert()">
+            click here
+        </button>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script>
+
+            $(document).ready(function(){
+                $.ajax({
+                    url:"img.json",
+                    dataType:"json",
+                    success:function(img){
+                        $(img.collection).each(function(index,value){
+                            alert(index,value)
+                         });
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
